@@ -1,0 +1,25 @@
+.service {
+    position: absolute;
+    left: -180px;
+    top: 58rem;
+    z-index: -1;
+    width: 58.6219rem;
+    height: 41.9595rem;
+    flex-shrink: 0;
+    background: url('../../public/Vector.png')no-repeat;
+    object-fit: cover;
+    background-size: contain;
+}
+
+.element {
+    position: absolute;
+    background: url('../../public/element.png')no-repeat;
+    width: 8.22381rem;
+    height: 7.1875rem;
+    right: 10px;
+        top: 80rem;
+        z-index: -1;
+    flex-shrink: 0;
+    object-fit: cover;
+        background-size: contain;
+}

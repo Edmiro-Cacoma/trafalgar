@@ -1,0 +1,15 @@
+.cardComponent{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 21.875rem;
+    height: 22.125rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #FFF;
+    /* drop shadow */
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+   
+}
