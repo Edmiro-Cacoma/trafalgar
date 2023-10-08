@@ -1,0 +1,12 @@
+
+
+.element {
+    position: relative;
+    background: url('../../public/element.png')no-repeat;
+    width: 8.2238rem;
+    height: 7.1875rem;
+    z-index: -1;
+    flex-shrink: 0;
+    object-fit: cover;
+    background-size: contain;
+}

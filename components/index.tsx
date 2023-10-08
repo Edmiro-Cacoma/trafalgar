@@ -2,5 +2,9 @@ import Header from "./Header";
 import Services from "./Services/Services";
 import Healthcare from "./Healthycare/Healthcare";
 import Rectangle from "./Rectangle/Rectangle";
-
-export { Header, Services, Healthcare,Rectangle };
+import Download from "./Download/Download";
+import Element from "./Element/Element";
+import Testmonials from "./Testimonials/Testmonials";
+import Article from "./Articles/Article";
+import Footer from "./Footer/Footer";
+export { Header, Services, Healthcare, Rectangle, Download, Element, Testmonials, Article, Footer };

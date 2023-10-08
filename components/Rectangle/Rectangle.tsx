@@ -3,10 +3,11 @@
 
 
 import React from 'react'
+import { Rectangle } from '@/types'
 
-const Rectangle = () => {
+const Rectangle = ({styles}:Rectangle) => {
   return (
-      <div className="w-[3.5rem] h-[0.125rem] flex-shrink-0 rounded-[ 0.3125rem] bg-[#000] mb-[2.5rem]"></div>
+      <div  className={`${styles} w-[3.5rem] h-[0.125rem] flex-shrink-0 mb-[1rem]`}></div>
   )
 }
 

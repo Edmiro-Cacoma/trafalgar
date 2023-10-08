@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Navbar from "./Navbar/Navbar";
 import Button from "./Button/page";
+import { Element } from ".";
 
 const Header = () => {
   return (
     <header className="relative  overflow-hidden">
+      <div className="absolute top-24">
+        <Element />
+      </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between py-[2rem]">
         <Image
           src="/logo.png"
@@ -14,8 +18,12 @@ const Header = () => {
           className="md:ml-[8rem]"
         />
         <Navbar />
+
       </div>
+      
+
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between ">
+
         <div className="flex  flex-col md:w-[27.8125rem] md:h-[21.125rem] flex-shrink-0 md:flex-1 md:ml-[2rem]  items-center ">
           <h1 className="text-center md:text-start text-4xl md:text-[3rem] font-[700] leading-[2.5rem] md:leading-[3.5rem] text-black w-[20rem] md:w-[27.6875rem] md:h-[7rem] mb-[1rem] mt-10 md:mt-0">
             Virtual healthcare for you
@@ -27,7 +35,7 @@ const Header = () => {
 
           <Button
             text="Consult today"
-            Styles="text-white font-[700] text-[1.125rem] bg-[#458FF6] leading-[3.75rem] relative md:right-32"
+            Styles="text-white font-[700] text-[1.125rem] bg-[#458FF6] leading-[3.75rem] relative md:right-32 transition ease-in-out delay-150 hover:border border-[#458FF6] hover:text-[#458FF6] hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300 "
           />
         </div>
         <div className="flex-1 mt-[3rem] md:mt-0">
@@ -41,15 +49,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="element hidden md:flex">
-        <Image
-          src="/element.png"
-          alt=""
-          width={130}
-          height={115}
-          className=" "
-        />
-      </div>
+
     </header>
   );
 };

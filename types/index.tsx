@@ -5,10 +5,16 @@ export interface ButtonProps {
   Styles?: String;
   buttonType?: "submit" | "button";
   handleClick?: MouseEventHandler<HTMLButtonElement>;
+  image?: String;
 }
 
-export interface Card{
-  title: String;
-  description: String;
-  imagem: String;
+
+export interface Rectangle { styles: String }
+export interface CarouselProps { items: String }
+export interface Testimonial {
+  id: number;
+  name: string;
+  title: string;
+  description: string;
+  url: string;
 }
